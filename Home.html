@@ -19,7 +19,7 @@
     font-family: "Segoe UI", Arial, sans-serif;
     background: var(--blue-dark);
     color: var(--white);
-    padding-top: 65px; /* space for top bar */
+    padding-top: 65px;
   }
 
   /* ===========================
@@ -56,6 +56,7 @@
     font-weight: 600;
     position: relative;
     transition: 0.3s ease;
+    white-space: nowrap;
   }
 
   .nav-right a:hover {
@@ -77,16 +78,26 @@
     width: 100%;
   }
 
-  /* ===========================
-     HERO SECTION
-  =========================== */
+  /* RESPONSIVE FIX */
+  @media (max-width: 600px) {
+    .nav-right a {
+      margin-left: 15px;
+      font-size: 16px;
+    }
+    .nav-left {
+      font-size: 22px;
+    }
+    .topbar {
+      padding: 0 20px;
+    }
+  }
+
+  /* HERO */
   .hero {
     height: 450px;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     border-bottom: 3px solid var(--blue-glow);
     background:
       radial-gradient(circle at center,
@@ -101,8 +112,6 @@
   }
 
   .hero-content {
-    position: relative;
-    z-index: 10;
     text-align: center;
     padding: 40px 50px;
     background: rgba(0,0,0,0.35);
@@ -116,7 +125,6 @@
     font-weight: 900;
     color: var(--blue-glow);
     margin-bottom: 12px;
-    letter-spacing: 1px;
   }
 
   .hero-content p {
@@ -126,9 +134,6 @@
     margin: auto;
   }
 
-  /* ===========================
-     SECTIONS
-  =========================== */
   .section {
     padding: 80px 60px;
     max-width: 1300px;
@@ -141,7 +146,6 @@
     color: var(--blue-glow);
     text-align: center;
     margin-bottom: 50px;
-    letter-spacing: 1px;
   }
 
   .games-grid {
@@ -217,7 +221,6 @@
   footer {
     margin-top: 60px;
     background: rgba(0,0,0,0.35);
-    backdrop-filter: blur(5px);
     padding: 25px;
     text-align: center;
     font-size: 14px;
@@ -229,7 +232,6 @@
 
 <body>
 
-<!-- TOP NAV BAR -->
 <nav class="topbar">
   <div class="nav-left">Boost2Go</div>
   <div class="nav-right">
@@ -242,10 +244,7 @@
 <section class="hero">
   <div class="hero-content">
     <h1>Boost2Go</h1>
-    <p>
-      The boost you need. The speed you want.  
-      No nonsense — just clean, professional, reliable leveling for the games you love.
-    </p>
+    <p>The boost you need. The speed you want.</p>
   </div>
 </section>
 
@@ -257,20 +256,14 @@
     <div class="game-card">
       <img src="https://static.wixstatic.com/media/8f4d9f_b67196a9732b439693418b4d8329f329~mv2.jpg">
       <h3>Red Dead Redemption 2</h3>
-      <p class="game-desc">
-        Ride with the best. Earn gold, level roles, unlock everything, and skip the grind.
-        Boost2Go handles the dusty work — you enjoy the frontier.
-      </p>
+      <p class="game-desc">Ride with the best. Earn gold, level roles, unlock everything.</p>
       <a href="RedDeadRedemption2.html">View Services</a>
     </div>
 
     <div class="game-card">
-      <img src="https://assets-prd.ignimgs.com/2020/10/09/phasmophobia-button-01-1602279416153.jpg?crop=1%3A1%2Csmart&format=jpg&auto=webp&quality=80">
+      <img src="https://assets-prd.ignimgs.com/2020/10/09/phasmophobia-button-01-1602279416153.jpg">
       <h3>Phasmophobia</h3>
-      <p class="game-desc">
-        Rank up fast, unlock gear, and complete challenges without the stress.
-        Boost2Go helps you conquer the ghosts — without getting jump‑scared.
-      </p>
+      <p class="game-desc">Rank up fast, unlock gear, complete challenges without stress.</p>
       <a href="Phasmophobia.html">View Services</a>
     </div>
 
