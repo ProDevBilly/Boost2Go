@@ -39,8 +39,8 @@
     justify-content: space-between;
     align-items: center;
 
-    /* SHIFTED LEFT MORE THAN LAST VERSION */
-    padding: 0 14px; 
+    /* SHIFTED LEFT EVEN MORE */
+    padding: 0 10px; 
     position: fixed;
     top: 0;
     left: 0;
@@ -59,11 +59,11 @@
     justify-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
-    max-width: 75%; /* prevents overflow */
+    max-width: 78%; /* more room for nav */
   }
 
   .nav-right a {
-    margin-left: 18px; /* keeps spacing clean */
+    margin-left: 18px;
     font-size: 16px;
     color: var(--white);
     text-decoration: none;
@@ -97,7 +97,7 @@
   =========================== */
   @media (max-width: 850px) {
     .topbar {
-      padding: 0 10px; /* tighter on tablets */
+      padding: 0 8px;
     }
     .nav-right a {
       margin-left: 12px;
@@ -110,7 +110,7 @@
 
   @media (max-width: 600px) {
     .topbar {
-      padding: 0 8px; /* even tighter on phones */
+      padding: 0 6px;
     }
     .nav-right a {
       margin-left: 8px;
