@@ -19,9 +19,67 @@
     font-family: "Segoe UI", Arial, sans-serif;
     background: var(--blue-dark);
     color: var(--white);
+    padding-top: 65px; /* space for top bar */
   }
 
-  /* HEADER */
+  /* ===========================
+     TOP NAV BAR
+  =========================== */
+  .topbar {
+    width: 100%;
+    height: 65px;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(6px);
+    border-bottom: 2px solid var(--blue-glow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  .nav-left {
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--blue-glow);
+    letter-spacing: 1px;
+  }
+
+  .nav-right a {
+    margin-left: 30px;
+    font-size: 18px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s ease;
+  }
+
+  .nav-right a:hover {
+    color: var(--blue-glow);
+  }
+
+  .nav-right a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: var(--blue-glow);
+    transition: width 0.3s ease;
+  }
+
+  .nav-right a:hover::after {
+    width: 100%;
+  }
+
+  /* ===========================
+     HEADER
+  =========================== */
   .header {
     text-align: center;
     padding: 60px 20px;
@@ -106,7 +164,6 @@
     transform: translateY(0);
   }
 
-  /* HOVER ANIMATION */
   .package-panel:hover {
     transform: translateY(-12px) scale(1.04);
     border-color: var(--blue-glow);
@@ -197,6 +254,16 @@
 </head>
 
 <body>
+
+<!-- TOP NAV BAR -->
+<nav class="topbar">
+  <div class="nav-left">Boost2Go</div>
+  <div class="nav-right">
+    <a href="home.html">Home</a>
+    <a href="RedDeadRedemption2.html">RDR2</a>
+    <a href="Phasmophobia.html">Phasmophobia</a>
+  </div>
+</nav>
 
 <!-- HEADER -->
 <section class="header">
