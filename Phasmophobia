@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phasmophobia Boosting - Boost2Go</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  :root {
+    --blue-dark: #05060d;
+    --blue-mid: #0a1220;
+    --blue-light: #1a2d4a;
+    --blue-glow: #3a6eff;
+    --white: #ffffff;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--blue-dark);
+    color: var(--white);
+  }
+
+  /* HEADER */
+  .header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, var(--blue-mid), var(--blue-dark));
+    border-bottom: 3px solid var(--blue-glow);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+  }
+
+  .header h1 {
+    font-size: 58px;
+    font-weight: 900;
+    color: var(--blue-glow);
+    margin-bottom: 10px;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.7);
+  }
+
+  .header p {
+    font-size: 22px;
+    opacity: 0.9;
+  }
+
+  /* CONTENT WRAPPER */
+  .content {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 32px;
+    color: var(--blue-glow);
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+  }
+
+  /* BOOSTING SERVICES */
+  .pricing-box {
+    background: var(--blue-mid);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.55);
+    border: 2px solid var(--blue-light);
+  }
+
+  .pricing-box h3 {
+    font-size: 26px;
+    color: var(--blue-glow);
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .pricing-item {
+    font-size: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .pricing-item:last-child {
+    border-bottom: none;
+  }
+
+  /* PACKAGE PANELS */
+  .package-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: nowrap;
+  }
+
+  .package-panel {
+    background: linear-gradient(145deg, var(--blue-light), var(--blue-mid));
+    width: 300px;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+    border: 2px solid var(--blue-light);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.55);
+    transition: 0.3s ease;
+    transform: translateY(0);
+  }
+
+  /* HOVER ANIMATION */
+  .package-panel:hover {
+    transform: translateY(-12px) scale(1.04);
+    border-color: var(--blue-glow);
+    box-shadow: 0 18px 50px rgba(58,110,255,0.55);
+  }
+
+  .package-panel h4 {
+    font-size: 24px;
+    color: var(--blue-glow);
+    margin-bottom: 10px;
+  }
+
+  .package-panel p {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .package-panel small {
+    font-size: 14px;
+    opacity: 0.85;
+    display: block;
+    line-height: 1.4;
+  }
+
+  /* CUSTOM ORDER BOX */
+  .custom-box {
+    margin-top: 60px;
+    background: linear-gradient(145deg, var(--blue-light), var(--blue-mid));
+    padding: 25px;
+    border-radius: 14px;
+    border: 2px solid var(--blue-light);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.55);
+    text-align: center;
+    transition: 0.3s ease;
+  }
+
+  .custom-box:hover {
+    transform: translateY(-8px);
+    border-color: var(--blue-glow);
+    box-shadow: 0 15px 45px rgba(58,110,255,0.45);
+  }
+
+  .custom-box h3 {
+    font-size: 26px;
+    color: var(--blue-glow);
+    margin-bottom: 10px;
+  }
+
+  .custom-box p {
+    font-size: 18px;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* DISCORD BUTTON */
+  .discord-btn {
+    display: block;
+    width: 260px;
+    margin: 50px auto;
+    padding: 15px;
+    background: var(--blue-glow);
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  .discord-btn:hover {
+    background: #2f5cff;
+    letter-spacing: 1px;
+  }
+
+  footer {
+    margin-top: 60px;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(5px);
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.9;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.4);
+  }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<section class="header">
+  <h1>Phasmophobia Boosting</h1>
+  <p>Fast • Safe • Affordable • Trusted</p>
+</section>
+
+<div class="content">
+
+  <!-- BOOSTING SERVICES -->
+  <div class="pricing-box">
+    <h3>Boosting Services</h3>
+
+    <div class="pricing-item">Level Boost — <strong>$1 per 10 levels</strong></div>
+    <div class="pricing-item">Money Boost — <strong>$1 per 10k</strong></div>
+    <div class="pricing-item">Prestige Boost — <strong>$8 per prestige</strong></div>
+    <div class="pricing-item">All Apocalypse Challenges — <strong>$6</strong></div>
+  </div>
+
+  <!-- PACKAGES -->
+  <h2>Packages</h2>
+
+  <div class="package-container">
+
+    <div class="package-panel">
+      <h4>All Trophies</h4>
+      <p><strong>$5</strong></p>
+      <small>All trophies comes with every trophy that can be gotten within the game</small>
+    </div>
+
+    <div class="package-panel">
+      <h4>All Challenges</h4>
+      <p><strong>$7</strong></p>
+      <small>All challenges comes with fully completed challenges like all apocalypse challenges and ranger challenge</small>
+    </div>
+
+    <div class="package-panel">
+      <h4>Maxed Boost</h4>
+      <p><strong>$30</strong></p>
+      <small>Maxed Boost comes with everything and 10 mil cash, prestige 20, level 1000</small>
+    </div>
+
+  </div>
+
+  <!-- CUSTOM ORDER BOX -->
+  <div class="custom-box">
+    <h3>Custom Order</h3>
+    <p>
+      Need something specific? We offer fully customized Phasmophobia boosting tailored to your exact needs.  
+      Whether it's a mix of levels, money, trophies, or unique goals — we can handle it.
+    </p>
+  </div>
+
+  <!-- DISCORD BUTTON -->
+  <a class="discord-btn" href="https://discord.gg/EdPHWWbjWe" target="_blank">
+    Purchase on Discord
+  </a>
+
+</div>
+
+<footer>
+  © <span id="year"></span> Boost2Go. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
