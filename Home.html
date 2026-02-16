@@ -27,7 +27,7 @@
   }
 
   /* ===========================
-     TOP NAV BAR
+     TOP NAV BAR (RIGHT ALIGNED)
   =========================== */
   .topbar {
     width: 100%;
@@ -36,10 +36,9 @@
     backdrop-filter: blur(6px);
     border-bottom: 2px solid var(--blue-glow);
     display: flex;
-    justify-content: flex-start; /* SHIFT EVERYTHING LEFT */
+    justify-content: space-between;
     align-items: center;
-    padding: 0 24px; /* tighter padding */
-    gap: 40px; /* space between logo and links */
+    padding: 0 24px;
     position: fixed;
     top: 0;
     left: 0;
@@ -50,17 +49,19 @@
     font-size: 24px;
     font-weight: 900;
     color: var(--blue-glow);
-    letter-spacing: 1px;
     white-space: nowrap;
   }
 
   .nav-right {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
   }
 
   .nav-right a {
-    margin-left: 18px;
+    margin-left: 20px;
     font-size: 16px;
     color: var(--white);
     text-decoration: none;
@@ -89,15 +90,27 @@
     width: 100%;
   }
 
-  /* RESPONSIVE FIX */
-  @media (max-width: 700px) {
-    .topbar {
-      padding: 0 12px;
-      gap: 20px;
+  /* ===========================
+     RESPONSIVE NAV FIX
+     (NEVER CLIPS, ALWAYS FITS)
+  =========================== */
+  @media (max-width: 850px) {
+    .nav-right a {
+      margin-left: 14px;
+      font-size: 14px;
     }
+    .nav-left {
+      font-size: 20px;
+    }
+    .topbar {
+      padding: 0 14px;
+    }
+  }
+
+  @media (max-width: 600px) {
     .nav-right a {
       margin-left: 10px;
-      font-size: 14px;
+      font-size: 13px;
     }
     .nav-left {
       font-size: 18px;
