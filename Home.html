@@ -27,7 +27,7 @@
   }
 
   /* ===========================
-     TOP NAV BAR (RIGHT ALIGNED)
+     TOP NAV BAR (RIGHT‑ALIGNED, PERFECT OFFSET)
   =========================== */
   .topbar {
     width: 100%;
@@ -38,7 +38,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 18px; /* moved left from 24px */
+
+    /* THIS IS THE MAGIC BALANCE */
+    padding: 0 32px; /* moved right more, but still safe */
     position: fixed;
     top: 0;
     left: 0;
@@ -57,11 +59,11 @@
     justify-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
-    overflow: hidden;
+    max-width: 70%; /* prevents overflow on long names */
   }
 
   .nav-right a {
-    margin-left: 18px;
+    margin-left: 22px; /* moved right more */
     font-size: 16px;
     color: var(--white);
     text-decoration: none;
@@ -94,21 +96,24 @@
      RESPONSIVE NAV FIX
   =========================== */
   @media (max-width: 850px) {
+    .topbar {
+      padding: 0 20px;
+    }
     .nav-right a {
-      margin-left: 12px;
+      margin-left: 14px;
       font-size: 14px;
     }
     .nav-left {
       font-size: 20px;
     }
-    .topbar {
-      padding: 0 12px; /* tighter on small screens */
-    }
   }
 
   @media (max-width: 600px) {
+    .topbar {
+      padding: 0 14px;
+    }
     .nav-right a {
-      margin-left: 8px;
+      margin-left: 10px;
       font-size: 13px;
     }
     .nav-left {
