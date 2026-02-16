@@ -4,8 +4,6 @@
 <meta charset="UTF-8">
 <title>Boost2Go – Level Up Without Limits</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- FAVICON -->
 <link rel="icon" type="image/png" href="https://i.ibb.co/jPKWg2CQ/Copilot-20251015-211028.png">
 <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/jPKWg2CQ/Copilot-20251015-211028.png">
 
@@ -26,9 +24,6 @@
     padding-top: 65px;
   }
 
-  /* ===========================
-     TOP NAV BAR (RIGHT‑ALIGNED, SHIFTED LEFT 4× MORE)
-  =========================== */
   .topbar {
     width: 100%;
     height: 65px;
@@ -38,9 +33,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /* SHIFTED LEFT 4× MORE THAN LAST VERSION */
-    padding: 0 2px; 
+    padding: 0 1px;
     position: fixed;
     top: 0;
     left: 0;
@@ -59,9 +52,7 @@
     justify-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
-
-    /* More room for nav so it never clips */
-    max-width: 85%;
+    max-width: 86%;
   }
 
   .nav-right a {
@@ -94,36 +85,18 @@
     width: 100%;
   }
 
-  /* ===========================
-     RESPONSIVE NAV FIX
-  =========================== */
   @media (max-width: 850px) {
-    .topbar {
-      padding: 0 2px;
-    }
-    .nav-right a {
-      margin-left: 12px;
-      font-size: 14px;
-    }
-    .nav-left {
-      font-size: 20px;
-    }
+    .topbar { padding: 0 1px; }
+    .nav-right a { margin-left: 12px; font-size: 14px; }
+    .nav-left { font-size: 20px; }
   }
 
   @media (max-width: 600px) {
-    .topbar {
-      padding: 0 1px;
-    }
-    .nav-right a {
-      margin-left: 8px;
-      font-size: 13px;
-    }
-    .nav-left {
-      font-size: 18px;
-    }
+    .topbar { padding: 0 0px; }
+    .nav-right a { margin-left: 8px; font-size: 13px; }
+    .nav-left { font-size: 18px; }
   }
 
-  /* HERO */
   .hero {
     height: 450px;
     display: flex;
@@ -131,15 +104,8 @@
     align-items: center;
     border-bottom: 3px solid var(--blue-glow);
     background:
-      radial-gradient(circle at center,
-        rgba(58,110,255,0.25) 0%,
-        rgba(10,18,32,1) 55%,
-        rgba(5,6,13,1) 100%
-      ),
-      linear-gradient(180deg,
-        rgba(0,0,0,0.4) 0%,
-        rgba(0,0,0,0.7) 100%
-      );
+      radial-gradient(circle at center, rgba(58,110,255,0.25) 0%, rgba(10,18,32,1) 55%, rgba(5,6,13,1) 100%),
+      linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100%);
   }
 
   .hero-content {
@@ -263,10 +229,8 @@
 
 <body>
 
-<!-- NAVBAR -->
 <nav class="topbar">
   <div class="nav-left">Boost2Go</div>
-
   <div class="nav-right">
     <a href="home.html">Home</a>
     <a href="privacy.html">Privacy Policy</a>
@@ -274,7 +238,6 @@
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-content">
     <h1>Boost2Go</h1>
@@ -282,7 +245,6 @@
   </div>
 </section>
 
-<!-- GAMES -->
 <section class="section" id="games">
   <h2>Available Games</h2>
 
