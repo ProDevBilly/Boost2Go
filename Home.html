@@ -27,7 +27,7 @@
   }
 
   /* ===========================
-     TOP NAV BAR (RIGHT‑ALIGNED, SHIFTED LEFT)
+     TOP NAV BAR (RIGHT‑ALIGNED, SHIFTED LEFT MORE)
   =========================== */
   .topbar {
     width: 100%;
@@ -39,8 +39,8 @@
     justify-content: space-between;
     align-items: center;
 
-    /* SHIFTED LEFT MORE */
-    padding: 0 20px; 
+    /* SHIFTED LEFT MORE THAN LAST VERSION */
+    padding: 0 14px; 
     position: fixed;
     top: 0;
     left: 0;
@@ -59,11 +59,11 @@
     justify-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
-    max-width: 72%; /* prevents overflow */
+    max-width: 75%; /* prevents overflow */
   }
 
   .nav-right a {
-    margin-left: 18px; /* shifted left */
+    margin-left: 18px; /* keeps spacing clean */
     font-size: 16px;
     color: var(--white);
     text-decoration: none;
@@ -97,7 +97,7 @@
   =========================== */
   @media (max-width: 850px) {
     .topbar {
-      padding: 0 14px;
+      padding: 0 10px; /* tighter on tablets */
     }
     .nav-right a {
       margin-left: 12px;
@@ -110,7 +110,7 @@
 
   @media (max-width: 600px) {
     .topbar {
-      padding: 0 10px;
+      padding: 0 8px; /* even tighter on phones */
     }
     .nav-right a {
       margin-left: 8px;
