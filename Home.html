@@ -33,7 +33,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 18px;
     position: fixed;
     top: 0;
     left: 0;
@@ -41,7 +41,7 @@
   }
 
   .nav-left {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 900;
     color: var(--blue-glow);
     white-space: nowrap;
@@ -49,9 +49,8 @@
 
   .nav-right {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
     white-space: nowrap;
   }
 
@@ -84,14 +83,14 @@
   }
 
   @media (max-width: 850px) {
-    .topbar { padding: 0 4px; }
+    .topbar { padding: 0 12px; }
     .nav-right { gap: 12px; }
     .nav-right a { font-size: 14px; }
     .nav-left { font-size: 20px; }
   }
 
   @media (max-width: 600px) {
-    .topbar { padding: 0 3px; }
+    .topbar { padding: 0 10px; }
     .nav-right { gap: 8px; }
     .nav-right a { font-size: 13px; }
     .nav-left { font-size: 18px; }
