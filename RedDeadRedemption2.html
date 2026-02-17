@@ -5,6 +5,9 @@
 <title>RDR2 Online Boosting - Boost2Go</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="icon" type="image/png" href="https://i.ibb.co/jPKWg2CQ/Copilot-20251015-211028.png">
+<link rel="shortcut icon" type="image/png" href="https://i.ibb.co/jPKWg2CQ/Copilot-20251015-211028.png">
+
 <style>
   :root {
     --blue-dark: #05060d;
@@ -14,17 +17,18 @@
     --white: #ffffff;
   }
 
-  body {
+  html, body {
     margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
+    padding: 0;
     background: var(--blue-dark);
     color: var(--white);
-    padding-top: 65px; /* space for top bar */
+    font-family: "Segoe UI", Arial, sans-serif;
   }
 
-  /* ===========================
-     TOP NAV BAR
-  =========================== */
+  body {
+    padding-top: 65px;
+  }
+
   .topbar {
     width: 100%;
     height: 65px;
@@ -34,7 +38,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -42,21 +46,27 @@
   }
 
   .nav-left {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 900;
     color: var(--blue-glow);
-    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    white-space: nowrap;
+    transform: translateX(-22px);
   }
 
   .nav-right a {
-    margin-left: 30px;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--white);
     text-decoration: none;
     font-weight: 600;
     position: relative;
     transition: 0.3s ease;
-    white-space: nowrap;
   }
 
   .nav-right a:hover {
@@ -78,23 +88,6 @@
     width: 100%;
   }
 
-  /* RESPONSIVE FIX */
-  @media (max-width: 600px) {
-    .nav-right a {
-      margin-left: 15px;
-      font-size: 16px;
-    }
-    .nav-left {
-      font-size: 22px;
-    }
-    .topbar {
-      padding: 0 20px;
-    }
-  }
-
-  /* ===========================
-     HEADER
-  =========================== */
   .header {
     text-align: center;
     padding: 60px 20px;
@@ -111,7 +104,6 @@
     text-shadow: 0 4px 12px rgba(0,0,0,0.7);
   }
 
-  /* CONTENT WRAPPER */
   .content {
     max-width: 1100px;
     margin: 50px auto;
@@ -126,7 +118,6 @@
     text-shadow: 0 3px 10px rgba(0,0,0,0.6);
   }
 
-  /* HORIZONTAL PANEL ROW */
   .panel-row {
     display: flex;
     justify-content: center;
@@ -163,7 +154,6 @@
     line-height: 1.5;
   }
 
-  /* CUSTOM ORDER BOX */
   .custom-box {
     margin-top: 60px;
     background: linear-gradient(145deg, var(--blue-light), var(--blue-mid));
@@ -194,7 +184,6 @@
     margin: 0 auto;
   }
 
-  /* DISCORD BUTTON */
   .discord-btn {
     display: block;
     width: 260px;
@@ -219,24 +208,21 @@
 
 <body>
 
-<!-- TOP NAV BAR -->
 <nav class="topbar">
   <div class="nav-left">Boost2Go</div>
   <div class="nav-right">
     <a href="home.html">Home</a>
-    <a href="RedDeadRedemption2.html">RDR2</a>
-    <a href="Phasmophobia.html">Phasmophobia</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="refund.html">Refund Policy</a>
   </div>
 </nav>
 
-<!-- HEADER -->
 <section class="header">
   <h1>RDR2 Online Boosting</h1>
 </section>
 
 <div class="content">
 
-  <!-- HORIZONTAL BOOSTING PANELS -->
   <div class="panel-row">
 
     <div class="panel">
@@ -256,13 +242,11 @@
 
   </div>
 
-  <!-- CUSTOM ORDER -->
   <div class="custom-box">
     <h3>Custom Order</h3>
     <p>Need something specific? We can create a custom RDR2 Online boosting package tailored to your exact needs.</p>
   </div>
 
-  <!-- ORDER BUTTON -->
   <a class="discord-btn" href="https://discord.gg/EdPHWWbjWe" target="_blank">
     Start Your Order
   </a>
